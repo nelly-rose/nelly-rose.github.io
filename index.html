@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaeae6">
+  <title>Nelly Rose — Portfolio</title>
+  <style>
+    :root{color-scheme:light;--paper:#eaeae6;--ink:#242421;--red:#a5282c}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'Courier New',monospace}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 4%;border-bottom:1px solid #aaa}
+    .wordmark{font-size:clamp(19px,3vw,29px);font-weight:500;letter-spacing:-1.5px;text-transform:lowercase}
+    .meta{font-size:11px;letter-spacing:.03em}.links{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
+    a{color:inherit;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}a:hover{color:var(--red)}
+    main{width:min(1100px,96%);margin:27px auto 35px}.viewer{width:100%;height:calc(100vh - 150px);min-height:550px;border:0;background:#fff;display:block}
+    footer{text-align:center;font-size:10px;padding:0 0 22px;color:#666}
+    @media(max-width:600px){header{padding:16px 4%;align-items:flex-start;flex-direction:column}.links{font-size:10px}.viewer{height:78vh;min-height:400px}}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="wordmark">nelly rose.</span>
+    <div class="links meta"><span>PORTFOLIO / 2026</span><a href="portfolio.pdf" target="_blank" rel="noopener">OUVRIR LE PDF ↗</a><a href="portfolio.pdf" download>TÉLÉCHARGER ↓</a></div>
+  </header>
+  <main>
+    <object class="viewer" data="portfolio.pdf#view=FitH" type="application/pdf">
+      <p>Le PDF ne s'affiche pas sur ce navigateur. <a href="portfolio.pdf">Ouvrir le portfolio.</a></p>
+    </object>
+  </main>
+  <footer>© NELLY ROSE — FASHION · STYLING · ART DIRECTION · VISUAL MERCHANDISING</footer>
+</body>
+</html>
